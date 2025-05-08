@@ -25,12 +25,6 @@ public class Main {
 
             }
 
-
-            System.out.println("el acumulado en un año es de: "+ x + " l/m2");
-            System.out.println("el promedio mensual es de: "+ y + " l/m2");
-
-
-
         }
     }
 }
