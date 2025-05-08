@@ -5,11 +5,32 @@ package paso_uno;
 public class Main {
     public static void main(String[] args) {
         {
- String[] meses={"enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre",
-         "octubre","noviembre","diciembre"};
-  int[]lluvia=new int[12];
-            lluvia[1]=23;lluvia[2]=20;lluvia[3]=5;lluvia[4]=20;lluvia[5]=47;lluvia[6]=25; lluvia[7]=7;lluvia[8]=24;
-            lluvia[9]=23; lluvia[10]=27; lluvia[11]=18;
+            int x = 0,y=0;
+            String[] meses = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre",
+                    "octubre", "noviembre", "diciembre"};
+            String[] ciudades = {"Quito", "Guayaquil", "Cuenca"};
+            int[][] lluvias = {{23,18,24},{15,20,16},{34,30,15},{51,51,50},{68,43,31},{20,22,14},{10,8,9},
+                    {15,15,19},{120,115,120},{180,175,130},{90,93,73},{68,72,58}};
+
+
+            for (int i = 0; i < 3; i++) {
+                System.out.println("Ciudad de "+ciudades[i]);
+                for (int j = 0; j < 12; j++) {
+                    System.out.println(meses[j]+" "+lluvias[j][i]+" l/m2");
+                    x += lluvias[j][i];
+                    y += lluvias[j][i]/12;
+                }
+                System.out.println(ciudades[i]+" acumulado: "+x+"l/m2");
+                System.out.println(ciudades[i]+" promedio: "+y+"l/m2");
+
+            }
+
+
+            System.out.println("el acumulado en un año es de: "+ x + " l/m2");
+            System.out.println("el promedio mensual es de: "+ y + " l/m2");
+
+
+
         }
     }
 }
