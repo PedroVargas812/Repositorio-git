@@ -23,6 +23,7 @@ public class Main {
                 System.out.println(ciudades[i]+" acumulado: "+x+"l/m2");
                 System.out.println(ciudades[i]+" promedio: "+y+"l/m2");
 
+
             }
 
         }
