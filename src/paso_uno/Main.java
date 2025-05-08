@@ -14,7 +14,7 @@ public class Main {
 
 
             for (int i = 0; i < 3; i++) {
-                System.out.println("Ciudad de "+ciudades[i]);
+                System.out.println("Ciudad de  "+ciudades[i]);
                 for (int j = 0; j < 12; j++) {
                     System.out.println(meses[j]+" "+lluvias[j][i]+" l/m2");
                     x += lluvias[j][i];
