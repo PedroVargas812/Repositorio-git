@@ -9,7 +9,7 @@ public class Main {
          "octubre","noviembre","diciembre"};
   int[]lluvia=new int[12];
             lluvia[1]=23;lluvia[2]=20;lluvia[3]=5;lluvia[4]=20;lluvia[5]=47;lluvia[6]=25; lluvia[7]=7;lluvia[8]=24;
-            lluvia[9]=23; lluvia[10]=20; lluvia[11]=18;
+            lluvia[9]=23; lluvia[10]=27; lluvia[11]=18;
         }
     }
 }
